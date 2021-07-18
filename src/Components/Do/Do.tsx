@@ -1,7 +1,6 @@
 import React from 'react';
 import {Col, Container, Row} from 'react-bootstrap';
-import pantheonx from './img_pantheonx.svg';
-import volta from './img_volta.svg';
+
 import './Do.scss';
 
 /**
@@ -26,73 +25,15 @@ class Do extends React.Component<any, any> {
             Take a look</span> at our wonderful projects
           </h2>
         </Col>
-        <Col xs={10} sm={10} md={8} lg={4} xl={3}>
+        <Col xs={10} className="bg-container">
           <a
-            href="https://pantheonx.io/#/home/en"
+            href="https://playv.co"
             target="blank" className="pantheonx_bg">
-            <object type="image/svg+xml" className="pantheonx" data={pantheonx}>
-              <img src={pantheonx} className="pantheonx" alt="PANTHEON X" />
+            <object type="image/svg+xml" className="pantheonx" data="https://s3.ap-northeast-1.amazonaws.com/open.volta/logo/playV-bigLogo.svg">
+              <img src="https://s3.ap-northeast-1.amazonaws.com/open.volta/logo/playV-bigLogo.svg" className="pantheonx" alt="PlayV" />
               <span className="sr-only">PANTHEON X</span>
             </object>
           </a>
-          <h4
-            className="brand"
-            data-aos="fade"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="true"
-            data-aos-offset="-200">
-            PANTHEON X
-          </h4>
-          <p
-            className="brandexplain"
-            data-aos="fade"
-            data-aos-delay="300"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="true"
-            data-aos-offset="-200">
-            Blockchain project that seeks to realize an open
-            business platform for digital asset finance.
-          </p>
-        </Col>
-        <Col
-          xs={10}
-          md={8}
-          lg={{span: 4, offset: 1}}
-          xl={{span: 3, offset: 1}}>
-          <a
-            href="https://volta.link/landing"
-            target="blank" className="volta_bg">
-            <object type="image/svg+xml" className="volta" data={volta}>
-              <img src={volta} className="volta" alt="VOLTA" />
-              <span className="sr-only">VOLTA</span>
-            </object>
-          </a>
-          <h4
-            className="brand"
-            data-aos="fade"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="true"
-            data-aos-offset="-200">
-            VOLTA
-          </h4>
-          <p
-            className="brandexplain"
-            data-aos="fade"
-            data-aos-delay="300"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="true"
-            data-aos-offset="-200">
-            All-in-one digital asset management platform
-            for investors and trading experts.
-          </p>
         </Col>
       </Row>
     </Container>
